@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.movies.bongobd"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic" >
+
+        <!-- android:theme="@android:style/Theme.Holo.Light.NoActionBar.Fullscreen" -->
+
+        <activity
+            android:name="com.movies.startingPage.StartingPage"
+            android:icon="@drawable/logo"
+            android:label="Bongo"
+            android:screenOrientation="portrait" >
+ >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.movies.browseAll.Movies"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.singleMovie.PlayMovie"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.singleMovie.SingleMoviePage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.movieSummary.MovieSummary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.actorProfile.ActorProfile"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.singleMovie.TestActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.tab.TabAndListView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.movieTiming.MovieTiming"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name="com.user.Login" >
+        </activity>
+        <activity
+            android:name="com.user.Registration"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.categoryPage.CategoryLanding"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.people.People"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.subscribe.Subscribe"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.login.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.login.ForgotPassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.login.SignUp"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.login.UserProfile"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name="com.movies.login.UpdatePassword"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.movies.twitter.TwitterActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="com.hintdesk.Twitter_oAuth"
+                    android:scheme="oauth" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.movies.twitter.OAuthActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+    </application>
+
+</manifest>

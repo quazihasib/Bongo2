@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholeLoginScreenLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="#FFFFFF"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:text="Login"
+            android:textColor="#B40404"
+            android:textStyle="bold" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/crossButtonLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:layout_marginLeft="-20dp"
+            android:src="@drawable/cross" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="6"
+        android:background="#E6E6E6"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvFbTitle"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.4"
+                android:gravity="bottom"
+                android:text="Login with Facebook"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/btnFbLogin"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.6"
+                android:src="@drawable/login_fb" />
+
+            <TextView
+                android:id="@+id/tvLoginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.4"
+                android:gravity="top"
+                android:text="Or Login with Your Email"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/edit_text_border"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#848484" />
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.6"
+                android:background="@drawable/edit_text_border"
+                android:hint="Password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#000000"
+                android:textColorHint="#848484" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.6"
+                android:background="#B40404"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/forgotpassword"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0.5"
+                android:gravity="bottom"
+                android:text="I forgot my password"
+                android:textColor="#D00000" />
+
+            <TextView
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.5"
+                android:gravity="top"
+                android:text="Don’t have an account? Sign up for free!"
+                android:textColor="#D00000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="3"
+        android:background="#E6E6E6"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

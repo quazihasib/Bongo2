@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Bongo1st</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="can_try_again">Press [img src=ic_launcher/] to accept or [img src=ic_launcher/] to retry</string>
+
+</resources>

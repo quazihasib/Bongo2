@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wholeUserProfileScreenlayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/crossButtonProfile"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="-5dp"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:padding="5dp"
+                android:src="@drawable/sidelred" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:src="@drawable/logo" />
+
+            <ImageView
+                android:id="@+id/ivUserProfileSearch"
+                android:layout_width="0px"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp" />
+            <!-- android:src="@drawable/search" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.30"
+            android:background="#D8D8D8"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="3"
+                android:background="#FFFFFF"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/settings1" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="0px"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:layout_weight="6"
+                        android:gravity="center_vertical"
+                        android:text="My Account"
+                        android:textColor="#DF0101" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D8D8D8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/userimg"
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#D8D8D8"
+                        android:src="@drawable/person" />
+
+                    <LinearLayout
+                        android:layout_width="0px"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="3"
+                        android:background="#FFFFFF"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/uname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Bongo BD"
+                            android:textColor="#000000" />
+
+                        <TextView
+                            android:id="@+id/uemail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="example@bongobd.com"
+                            android:textColor="#BDBDBD" />
+
+                        <TextView
+                            android:id="@+id/uchangepass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="Change password"
+                            android:textColor="#DF0101" />
+
+                        <TextView
+                            android:id="@+id/uupdatepinfo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textColor="#DF0101" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 2nd part start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="10dp"
+                android:layout_weight="3"
+                android:background="#D8D8D8"
+                android:orientation="vertical" >
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvRefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="Refer a Friend"
+                        android:textColor="#DF0101" />
+                        
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D8D8D8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvEarnPoints"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Earn points by reffering friends"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/multipleemail"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="Enter multiple email address with comma"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#D8D8D8" />
+
+                    <Button
+                        android:id="@+id/btnrefer"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#DF0101"
+                        android:text="INVITE"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <!-- 3rd part start -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_margin="5dp"
+                android:layout_weight="3"
+                android:background="#D8D8D8"
+                android:orientation="vertical" >
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.8"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvSubcribe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:text="Subcribe to Newsletter"
+                        android:textColor="#DF0101" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#D8D8D8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0px"
+                    android:layout_margin="5dp"
+                    android:layout_weight="3"
+                    android:background="#FFFFFF"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tvSubcribeNewsLetter"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:text="Subscribe to our newsletter to get updates on trends"
+                        android:textColor="#000000" />
+
+                    <EditText
+                        android:id="@+id/subscribeNewsLetteret"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edit_text_border"
+                        android:hint="Enter email address"
+                        android:imeOptions="actionDone"
+                        android:paddingLeft="10dp"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textColorHint="#D8D8D8" />
+
+                    <Button
+                        android:id="@+id/btnSubscribeNewsLetter"
+                        android:layout_width="match_parent"
+                        android:layout_height="0px"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:background="#DF0101"
+                        android:text="SUBSCRIBE"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_weight="0.6"
+                android:background="#D8D8D8"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

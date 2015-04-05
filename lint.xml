@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="InflateParams" severity="ignore" />
+    <issue id="InlinedApi" severity="ignore" />
+    <issue id="NewApi" severity="ignore">
+        <ignore path="src/com/movies/movieSummary/MovieSummary.java" />
+        <ignore path="src/com/movies/page/SingleMoviePage.java" />
+    </issue>
+    <issue id="SetJavaScriptEnabled" severity="ignore" />
+</lint>
